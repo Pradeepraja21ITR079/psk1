@@ -1,0 +1,59 @@
+.slideshow-container {
+    position: relative;
+    width: 100%; /* Set width to cover the entire page */
+    max-width: 1200px; /* Limit maximum width */
+    height: 60vh; /* Set a fixed height */
+    margin: 0 auto; /* Center the slideshow horizontally */
+    overflow: hidden;
+   
+    border-radius: 10px; /* Add some rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.slideshow-image {
+    width: 100%; /* Ensure the image fills the container horizontally */
+    height: 100%; /* Ensure the image fills the container vertically */
+    object-fit:cover; /* Ensure the entire image is covered */
+    object-position: center; /* Center the image within the container */
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Set slide width to match container */
+    height: 100%; /* Set slide height to match container */
+}
+
+.active {
+    display: block;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    background-color: rgba(82, 78, 78, 0.5); /* Semi-transparent background */
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Darker background on hover */
+}
+
+.prev-btn {
+    left: 10px; /* Adjust position as needed */
+}
+
+.next-btn {
+    right: 10px; /* Adjust position as needed */
+}
